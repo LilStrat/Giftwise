@@ -1,0 +1,11 @@
+title: Giftwise Guides
+description: Thoughtful gift ideas sorted by who you're buying for and what they love.
+url: "https://lilstrat.github.io"
+baseurl: "/Giftwise"
+# Replace with your Amazon Associates tracking ID once approved
+amazon_tag: YOURTAG-20
+markdown: kramdown
+permalink: pretty
+defaults:
+  - scope: {path: "guides"}
+    values: {layout: guide}
