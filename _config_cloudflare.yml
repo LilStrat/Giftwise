@@ -1,0 +1,3 @@
+# Overrides for the Cloudflare Pages build (served from the domain root).
+url: "https://giftwiseguides.pages.dev"
+baseurl: ""
