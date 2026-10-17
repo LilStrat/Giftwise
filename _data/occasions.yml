@@ -1,0 +1,21 @@
+# Upcoming gift occasions shown on the homepage. "key" must match the `occasion` field in guide front matter.
+- key: Valentine's Day
+  when: February 14
+  icon: heart
+  color: red
+- key: Mother's Day
+  when: Second Sunday in May
+  icon: flower-tulip
+  color: green
+- key: Father's Day
+  when: Third Sunday in June
+  icon: coffee
+  color: blue
+- key: Graduation
+  when: May and June
+  icon: graduation-cap
+  color: yellow
+- key: Christmas
+  when: December 25
+  icon: tree-evergreen
+  color: green

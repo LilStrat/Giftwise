@@ -25,7 +25,7 @@ Most men don't want a teddy bear. They want the nicer version of something they 
 ## If he's always on the move
 
 <div class="pick" markdown="1">
-**A slim leather wallet.** Most guys carry something falling apart. Look for RFID blocking and 4---6 card slots.
+**A slim leather wallet.** Most guys carry something falling apart. Look for RFID blocking and 4 to 6 card slots.
 {% include amz.html q="slim leather wallet men" %}
 </div>
 

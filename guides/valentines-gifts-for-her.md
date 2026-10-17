@@ -23,7 +23,7 @@ Flowers wilt by the 20th. These last longer and say you were paying attention. P
 ## If she's always cooking
 
 <div class="pick" markdown="1">
-**An enameled cast-iron Dutch oven.** The pan she'd never buy herself and will use for twenty years. A 5---6 quart size covers most recipes.
+**An enameled cast-iron Dutch oven.** The pan she'd never buy herself and will use for twenty years. A 5 to 6 quart size covers most recipes.
 {% include amz.html q="enameled cast iron dutch oven 5.5 quart" %}
 </div>
 

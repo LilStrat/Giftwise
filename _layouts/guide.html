@@ -1,9 +1,24 @@
 ---
 layout: default
 ---
+{% assign occ = site.data.occasions | where: "key", page.occasion | first %}
 <article>
-<div class="eyebrow">{{ page.occasion | default: 'Gift guide' }}</div>
+<header class="guide-head">
+<div class="guide-icon {{ page.tag_color }}">{% include icon.html name=page.icon %}</div>
+<div>
+<span class="tag {{ page.tag_color }}">{{ page.occasion | default: 'Gift guide' }}</span>
 <h1>{{ page.title }}</h1>
-<p class="meta">Updated {{ page.updated | default: page.date | date: '%B %-d, %Y' }}</p>
-{{ content }}
+<p class="meta">Updated {{ page.updated | default: page.date | date: '%B %-d, %Y' }}{% if occ %} <span aria-hidden="true">/</span> {{ occ.when }}{% endif %}</p>
+</div>
+</header>
+<div class="prose">{{ content }}</div>
 </article>
+{% assign others = site.pages | where_exp: "p", "p.path contains 'guides/'" | where_exp: "p", "p.url != page.url" %}
+{% if others.size > 0 %}
+<section class="related">
+<h2>More gift guides</h2>
+<div class="related-list">
+{% for g in others limit: 3 %}<a href="{{ g.url | relative_url }}"><span class="ri {{ g.tag_color }}">{% include icon.html name=g.icon %}</span><span>{{ g.title }}</span></a>{% endfor %}
+</div>
+</section>
+{% endif %}
