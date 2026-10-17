@@ -4,6 +4,7 @@ description: Thoughtful Valentine's ideas for a girlfriend or wife, grouped by w
 date: 2026-10-17
 occasion: Valentine's Day
 tag_color: red
+image: https://images.unsplash.com/photo-1518199266791-5375a83190b7
 icon: heart
 ---
 Flowers wilt by the 20th. These last longer and say you were paying attention. Pick the section that sounds most like her.

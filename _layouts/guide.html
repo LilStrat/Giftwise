@@ -4,13 +4,12 @@ layout: default
 {% assign occ = site.data.occasions | where: "key", page.occasion | first %}
 <article>
 <header class="guide-head">
-<div class="guide-icon {{ page.tag_color }}">{% include icon.html name=page.icon %}</div>
-<div>
 <span class="tag {{ page.tag_color }}">{{ page.occasion | default: 'Gift guide' }}</span>
 <h1>{{ page.title }}</h1>
-<p class="meta">Updated {{ page.updated | default: page.date | date: '%B %-d, %Y' }}{% if occ %} <span aria-hidden="true">/</span> {{ occ.when }}{% endif %}</p>
-</div>
+<p class="lede">{{ page.description }}</p>
+<p class="meta">Updated {{ page.updated | default: page.date | date: '%B %-d, %Y' }}{% if occ %} <span aria-hidden="true">/</span> {{ page.occasion }} is {{ occ.when }}{% endif %}</p>
 </header>
+<div class="guide-photo">{% include photo.html src=page.image alt=page.title icon=page.icon color=page.tag_color w=1400 loading="eager" %}</div>
 <div class="prose">{{ content }}</div>
 </article>
 {% assign others = site.pages | where_exp: "p", "p.path contains 'guides/'" | where_exp: "p", "p.url != page.url" %}
@@ -18,7 +17,7 @@ layout: default
 <section class="related">
 <h2>More gift guides</h2>
 <div class="related-list">
-{% for g in others limit: 3 %}<a href="{{ g.url | relative_url }}"><span class="ri {{ g.tag_color }}">{% include icon.html name=g.icon %}</span><span>{{ g.title }}</span></a>{% endfor %}
+{% for g in others limit: 3 %}<a href="{{ g.url | relative_url }}"><span class="ri">{% include photo.html src=g.image alt="" icon=g.icon color=g.tag_color w=200 %}</span><span>{{ g.title }}</span></a>{% endfor %}
 </div>
 </section>
 {% endif %}

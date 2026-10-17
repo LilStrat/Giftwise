@@ -4,6 +4,7 @@ description: Practical, non-cheesy Valentine's ideas for a boyfriend or husband.
 date: 2026-10-17
 occasion: Valentine's Day
 tag_color: blue
+image: https://images.unsplash.com/photo-1495474472287-4d71bcdd2085
 icon: coffee
 ---
 Most men don't want a teddy bear. They want the nicer version of something they already use. Start with what he does on a Saturday.

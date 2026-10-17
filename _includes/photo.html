@@ -1,0 +1,5 @@
+{% comment %} Photo with an icon tile fallback if the image fails to load. Params: src, alt, icon, color, w {% endcomment %}
+<div class="ph {{ include.color | default: 'red' }}{% unless include.src %} noimg{% endunless %}">
+{% include icon.html name=include.icon %}
+{% if include.src %}<img src="{{ include.src }}{% if include.src contains 'unsplash' %}?auto=format&fit=crop&w={{ include.w | default: 900 }}&q=70{% endif %}" alt="{{ include.alt }}" loading="{{ include.loading | default: 'lazy' }}" decoding="async" onerror="this.parentNode.classList.add('noimg')">{% endif %}
+</div>
