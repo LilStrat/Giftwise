@@ -1,4 +1,8 @@
 # Upcoming gift occasions shown on the homepage. "key" must match the `occasion` field in guide front matter.
+- key: Christmas
+  when: December 25
+  icon: tree-evergreen
+  color: green
 - key: Valentine's Day
   when: February 14
   icon: heart
@@ -15,7 +19,3 @@
   when: May and June
   icon: graduation-cap
   color: yellow
-- key: Christmas
-  when: December 25
-  icon: tree-evergreen
-  color: green
