@@ -35,6 +35,17 @@ Most men don't want a teddy bear. They want the nicer version of something they 
 {% include amz.html q="insulated water bottle 32 oz" %}
 </div>
 
+## If he games or watches a lot of sport
+
+<div class="pick" markdown="1">
+**A comfortable wireless headset.** Long sessions are much better without a cable to trip over. Check it works with his console or PC before buying.
+{% include amz.html q="wireless gaming headset" %}
+</div>
+
+<div class="pick" markdown="1">
+**A shirt or scarf from his team, plus a snack box for the next match.** Small, personal, and a night in sorted.
+</div>
+
 ## If you'd rather share an experience
 
 <div class="pick" markdown="1">
@@ -45,3 +56,4 @@ Most men don't want a teddy bear. They want the nicer version of something they 
 
 - Order by **February 7** to be safe on shipping.
 - If he says "I don't need anything", pick an upgrade to something worn out.
+- A handwritten card matters more than the price. Say one specific thing you love about him.
